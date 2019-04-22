@@ -1,0 +1,8 @@
+Associação
+
+Has-many: Quando temos uma classe A com um array de referências a uma classe B.
+A has-many B
+1...n
+
+A has-many B e B has-many A
+m...n

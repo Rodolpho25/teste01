@@ -1,0 +1,12 @@
+git init -> Inicializa o repo local
+git remote add origin <endereco> ->
+Configura o repo remoto 
+git status -> verifica os arquivos
+a serem mandados para os repos.
+git add <arquivo|.> -> deixa os arquivos
+como tracked.
+git commit -m <mensagem> -> coloca os arquivos
+tracked para o repo local.
+
+git pull origin master -> baixa as atualizações
+do coleguinha.

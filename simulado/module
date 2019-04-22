@@ -1,0 +1,78 @@
+# Módulos/Modules(mixin/namespace)
+Um módulo provê uma interface a ser "misturada" com alguma classe. Não pode ser instanciado, ele é
+apenas um conjunto de métodos (e constantes). Você pode especificar qual funcionalidadede um módulo 
+específico você deseja adicionar a uma classe ou a um objeto. Módulos permanecem sozinhos, sem hierarquia
+ou herança.
+
+    Module Teste
+        def teste #Não estático(se mistura)
+            puts "teste..."
+        end
+    
+        def Teste.Metodo_estatico
+            puts "Método estático"
+        end
+    end
+    
+    clas Foo
+    # O include irá misturar os métodos de teste
+        include Teste
+    end
+    
+    Teste.Metodo_estatico
+    foo = Foo.new
+    foo.teste
+    
+ - Permitem nomespace - métodos cujos nomes não irão colidir com aqueles definidos em outras partes de um programa.
+ - Permitem compartilhar funcionalidadede entre classes - se uma classe mistura um módulo, todos os métodos de instância do módulo se tornam disponíveis, como se estivessem sido definidos na classe.
+    
+
+# Duck Typing
+> "Se grasna como um pato, nada como um pato e voa como pato. Essa coisa só pode ser pato!"
+
+Na prática, isso significa que em vez de fazer verificações de tipo de um objeto, você
+deve se preocupar se este objeto é capaz de executar o método que você precisa.
+
+Duck Typing é definir objetos pelo que eles podem fazer, do que por seu tipo. 
+
+    class Duck  
+        def quack  
+            'Quack!'  
+        end  
+  
+        def swim  
+            'Paddle paddle paddle...'  
+        end  
+    end  
+  
+    class Goose  
+        def honk  
+            'Honk!'  
+        end  
+        
+        def swim  
+            'Splash splash splash...'  
+        end  
+    end  
+  
+    class DuckRecording  
+        def quack  
+            play  
+        end  
+  
+        def play  
+            'Quack!'  
+        end  
+    end  
+  
+    def make_it_quack(duck)  
+        duck.quack  
+    end  
+    puts make_it_quack(Duck.new)  
+    puts make_it_quack(DuckRecording.new)  
+  
+    def make_it_swim(duck)  
+        duck.swim  
+    end  
+    puts make_it_swim(Duck.new)  
+    puts make_it_swim(Goose.new) 

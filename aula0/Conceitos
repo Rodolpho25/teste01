@@ -1,0 +1,10 @@
+Classe: É usado para definir o comportamento e as características dos objetos.
+
+Objeto: É uma instância da classe. Representação fiel das definições contidas na classe Ocupa espaços na memória de acordo com a classe.
+
+Atributo: São as características dos objetos. Computacionalmente, são campos (variáveis) que os objetos carregam consigo.
+
+Método: São os comportamentos que possuem os objetos e são definidos nos métodos.
+Um método pode ter seu comportamento dependente a um estado.
+
+Estado: São os valores que possuem os atributos. Podem variar conforme a execução do programa. 

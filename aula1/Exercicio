@@ -1,0 +1,14 @@
+1) Um Revolver possui munição e uma quantidade máxima dela.
+Ao atirar é gasto uma munição e só é possível esta ação se houver, pelo menos, uma.
+É possível recarregar uma munição por vez caso a quantidade de munição não seja a máxima.
+Crie um dipostivo para mostrar a quantidade atual de munição e a máxima.
+Implente em ruby, a situação descrita.
+
+2) Um endereco eh composto de 
+nome da rua, cidade e estado.
+Uma empresa só entrega em São
+Paulo, Rio de Janeiro, Minas 
+e Goiás. Faça um dispositivo 
+para mostrar o endereço completo
+por extenso. Implemente essa
+situação.

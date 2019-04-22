@@ -1,0 +1,21 @@
+modules
+
+adicionam funcionalidades a uma classe sem o uso de herença.
+Ela por si só, mão ser instanciada. Seus metodos são todos estáticos, porém,
+usada em uma classe, esse comportamento fica não estáticos
+
+module  FOO
+
+    def algo
+            puts "metodo algo"
+    end
+end
+
+FOO-algo
+
+class Classe
+    include FOO 
+end
+
+c=Classe.new
+c.algo
